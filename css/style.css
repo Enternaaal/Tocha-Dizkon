@@ -416,3 +416,87 @@ body {
   line-height: 26px;
   color: #1d2530;
 }
+
+/* 2.4 price */
+
+.price {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.price__title {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 64px;
+  text-align: center;
+  color: #1d2530;
+  margin-bottom: 16px;
+}
+
+.price__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1d2530;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card__item {
+  background: #fcfeff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  max-width: 350px;
+  min-height: 387px;
+}
+
+.card__name {
+  padding: 7px 114px 6px 114px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 48px;
+  color: #685ed6;
+  background: rgba(104, 94, 214, 0.05);
+}
+
+.card__title {
+  padding-top: 40px;
+  padding-bottom: 32px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  color: #1d2530;
+}
+
+.card__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #1d2530;
+  padding-bottom: 58px;
+}
+
+.card__link {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 12px 66px 12px 66px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  background: #685ed6;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
