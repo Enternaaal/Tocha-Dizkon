@@ -184,6 +184,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Gilroy", sans-serif;
+  background: rgba(242, 247, 255, 0.5);
+  backdrop-filter: blur(100px);
 }
 
 /* 1.4 container */
@@ -270,6 +272,13 @@ body {
 .intro {
   padding-top: 93px;
   padding-bottom: 59px;
+  background: rgba(242, 247, 255, 0.5);
+  backdrop-filter: blur(100px);
+  height: auto;
+  background-image: url("../images/bgblur.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .intro__inner {
@@ -296,7 +305,6 @@ body {
 
 .intro__descr {
   display: inline-block;
-  min-width: 550px;
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
@@ -326,6 +334,8 @@ body {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
   border-radius: 6px;
   transition: all 0.3s;
+  position: relative;
+  z-index: 4;
 }
 
 .intro__link:hover {
@@ -337,17 +347,72 @@ body {
 }
 
 .intro__column:nth-child(1) {
+  display: inline-block;
   z-index: 1;
+  min-width: 482px;
 }
 
 .intro__column:nth-child(2) {
   min-width: 720px;
   z-index: 2;
-  position: relative;
 }
 
-.intro__decor {
+.intro__decor img {
   top: 0;
-  position: absolute;
-  right: 170px;
+  transform: translateX(-102px);
+}
+
+/* 2.3 description */
+
+.description {
+  padding-top: 70px;
+  padding-bottom: 82px;
+  background-image: url("../images/descr-bg.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.description__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 32px;
+  color: #1d2530;
+  margin-bottom: 68px;
+}
+
+.description__list {
+  flex-basis: 522px;
+}
+
+.description__items {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.description__text {
+  margin-left: 26px;
+  flex-basis: 428px;
+}
+
+.description__caption {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1d2530;
+  margin-bottom: 8px;
+}
+
+.description__spec {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1d2530;
 }
