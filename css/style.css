@@ -631,3 +631,113 @@ body {
   margin-top: 30px;
   margin-right: 40px;
 }
+
+/* 2.5 reviews */
+
+.reviews {
+  padding-bottom: 82px;
+}
+
+.reviews__title {
+  margin-top: 17px;
+  margin-bottom: 48px;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 64px;
+  color: #1d2530;
+  text-align: center;
+  position: relative;
+}
+
+.reviews__title:before {
+  content: "";
+  right: -32px;
+  top: -20px;
+  width: 142px;
+  height: 121px;
+  position: absolute;
+  background-image: url("../images/reviews-decor.svg");
+}
+
+.reviews__innner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__content {
+  display: block;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  max-width: 540px;
+  max-height: 232px;
+  padding: 32px 32px 56px 32px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.reviews__content:before {
+  content: "";
+  width: 0;
+  height: 0;
+  left: 50%;
+  bottom: -9px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffff;
+  position: absolute;
+}
+
+.reviews__column {
+  text-align: center;
+}
+
+.reviews__column:nth-child(1) {
+  margin-right: 30px;
+}
+
+.reviews__content-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #18191f;
+  margin-bottom: 8px;
+}
+
+.reviews__content-subtitle {
+  min-width: 476px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #18191f;
+}
+
+.reviews__user {
+  display: block;
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews__user-descr {
+  margin-left: 16px;
+  text-align: left;
+}
+
+.reviews__user-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1d2530;
+}
+
+.reviews__user-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #1d2530;
+}
