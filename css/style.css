@@ -741,3 +741,39 @@ body {
   font-feature-settings: "salt" on, "liga" off;
   color: #1d2530;
 }
+
+/* slider */
+
+.slick-slider {
+  min-width: 1110px;
+}
+
+.slider .slick-dots {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 12px;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  opacity: 0.5;
+  width: 10px;
+  height: 11px;
+  border: 2px solid #685ed6;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+
+.slider .slick-dots button:hover {
+  background-color: #685ed6;
+}
+
+.slick-active button {
+  background-color: #685ed6;
+}
