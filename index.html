@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="sourse/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__box">
@@ -23,18 +24,14 @@
                     </a>
                     <a href="#" class="header__caption">tocha</a>
                 </div>
-                <ul class="header__items">
-                    <li class="header__item">
-                        <a href="#" class="header__link">
-                            Вход
-                        </a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">
-                            Регистрация
-                        </a>
-                    </li>
-                </ul>
+                <div class="header__links">
+                    <a href="#" class="header__link">
+                        Вход
+                    </a>
+                    <a href="#" class="header__link" id="open-popup">
+                        Регистрация
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -43,7 +40,7 @@
         <section class="intro">
             <div class="container">
                 <div class="intro__inner">
-                    <div class="intro__column">
+                    <div class="intro__column" data-aos="fade-right">
                         <h1 class="intro__title">Telegram чат</h1>
                         <p class="intro__subtitle">на вашем сайте</p>
                         <p class="intro__descr">Общение с клиентами станет простым<br>
@@ -52,7 +49,7 @@
                         </p>
                         <a href="#" class="intro__link">Подключить</a>
                     </div>
-                    <div class="intro__column">
+                    <div class="intro__column" data-aos="fade-left">
                         <div class="intro__decor">
                             <img src="images/intro.svg" alt="image" class="decor__img">
                         </div>
@@ -65,8 +62,8 @@
             <div class="container">
                 <div class="description__inner">
                     <div class="description__column">
-                        <h3 class="description__title">Tocha Online — это</h3>
-                        <ul class="description__list">
+                        <h3 class="description__title" data-aos="fade-right">Tocha Online — это</h3>
+                        <ul class="description__list" data-aos="fade-right">
                             <li class="description__items">
                                 <img src="images/descr-1.svg" alt="" class="description__img">
                                 <div class="description__text">
@@ -99,7 +96,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="description__column">
+                    <div class="description__column" data-aos="fade-left">
                         <img src="images/descrbg.svg" alt="">
                     </div>
                 </div>
@@ -108,11 +105,11 @@
 
         <section class="price">
             <div class="container">
-                <h3 class="price__title">Тарифы</h3>
-                <p class="price__subtitle">Стоимость зависит от трафика сайта</p>
+                <h3 class="price__title" data-aos="zoom-in">Тарифы</h3>
+                <p class="price__subtitle" data-aos="zoom-in">Стоимость зависит от трафика сайта</p>
                 <div class="price__inner">
                     <ul class="card__list">
-                        <li class="card__item">
+                        <li class="card__item" data-aos="fade-right">
                             <p class="card__name">Бесплатно</p>
                             <h4 class="card__title">Пробный период на 1 месяц</h4>
                             <p class="card__subtitle">0₽/первый месяц</p>
@@ -124,7 +121,7 @@
                             <p class="card__subtitle">200₽/месяц</p>
                             <a href="#" class="card__link">Подключить за 200₽</a>
                         </li>
-                        <li class="card__item">
+                        <li class="card__item" data-aos="fade-left">
                             <p class="card__name">Премиум</p>
                             <h4 class="card__title">Более 1000<br>
                                 посещений в сутки</h4>
@@ -137,10 +134,10 @@
         </section>
         <section class="steps">
             <div class="container">
-                <h3 class="steps__title">Всего 3 шага для подключения Telegram чата</h3>
+                <h3 class="steps__title" data-aos="flip-up">Всего 3 шага для подключения Telegram чата</h3>
                 <div class="steps__inner">
                     <ul class="steps__items">
-                        <li class="steps__item">
+                        <li class="steps__item" data-aos="fade-up-right">
                             <span class="steps__spn">1</span>
                             <h5 class="steps__caption steps__decor">Telegram bot</h5>
                             <p class="steps__text">Вы создаёте Telegram бота<br> для вашего сайта</p>
@@ -150,20 +147,20 @@
                             <h5 class="steps__caption steps__decor-2">Подключение Tocha</h5>
                             <p class="steps__text">Tocha подключает Telegram бота<br>к вашему сайту</p>
                         </li>
-                        <li class="steps__item">
+                        <li class="steps__item" data-aos="fade-up-left">
                             <span class="steps__spn">3</span>
                             <h5 class="steps__caption">Telegram-чат</h5>
                             <p class="steps__text">Консультант отвечает<br> на вопросы посетителей сайта</p>
                         </li>
                     </ul>
                     <ul class="steps-phone__items">
-                        <li class="steps-phone__item">
+                        <li class="steps-phone__item" data-aos="fade-up-right">
                             <img src="images/phone-1.svg" alt="" class="steps__phone-1">
                         </li>
                         <li class="steps-phone__item">
                             <img src="images/phone-2.svg" alt="" class="steps__phone-2">
                         </li>
-                        <li class="steps-phone__item">
+                        <li class="steps-phone__item" data-aos="fade-up-left">
                             <img src="images/phone-3.svg" alt="" class="steps__phone-3">
                         </li>
                     </ul>
@@ -172,7 +169,7 @@
         </section>
         <section class="reviews">
             <div class="container">
-                <h2 class="reviews__title">Отзывы клиентов</h2>
+                <h2 class="reviews__title" data-aos="zoom-in-up">Отзывы клиентов</h2>
                 <div class="slider">
                     <div class="slider__item">
                         <div class="reviews__innner">
@@ -295,19 +292,76 @@
         </section>
         <section class="connect">
             <div class="container">
-                <div class="connect__column">
-                    <img src="images/connect.jpg" alt="" class="connect-img">
-                </div>
-                <div class="connect__column">
-                    <form action="#" class="form">
-                        <h2 class="form__title"></h2>
-                    </form>
+                <div class="connect__inner">
+                    <div class="connect__column">
+                        <img src="images/connect.svg" alt="" class="connect-img">
+                    </div>
+                    <div class="connect__column">
+                        <form action="#" class="form">
+                            <h2 class="form__title">Подключите Telegram чат уже сегодня</h2>
+                            <input class="form__input" type="e-mail" placeholder="Введите e-mail">
+                            <input class="form__button" type="submit" name="button" value="Отправить">
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <img src="images/logo.svg" alt="image" class="logo">
+                    <span>tocha</span>
+                </div>
+                <div class="footer__links">
+                    <ul class="footer__telegram-list">
+                        <li class="footer__telegram-item">
+                            <a href="#" class="footer__telegram-caption">Telegram чат</a>
+                            <a href="#" class="footer__telegram-text">О нас</a>
+                            <a href="#" class="footer__telegram-text">Партнеры</a>
+                            <a href="#" class="footer__telegram-text">Инструкция</a>
+                            <a href="#" class="footer__telegram-text">Цены</a>
+                            <a href="#" class="footer__telegram-text">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__support-list">
+                        <li class="footer__support-item">
+                            <a href="#" class="footer__support-caption">Поддержка</a>
+                            <a href="#" class="footer__support-text">Центр поддержки</a>
+                            <a href="#" class="footer__support-text">Политика конфеденциальности</a>
+                            <a href="#" class="footer__support-text">Документы оферта</a>
+                            <a href="#" class="footer__support-text">Документы оферта</a>
+                            <a href="#" class="footer__support-text">Статус</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="footer__copyright">
+            <span>© 2021 Tocha. Все права защищены</span>
+        </a>
+    </footer>
 
+    <div class="popup-reg" id="popup-reg">
+        <div class="popup-reg__body" id="popup-reg__body">
+            <div class="popup-reg__content">
+                <a href="#header" class="popup-reg__close" id="close-popup">
+                    <img src="images/popup-close.svg" alt="close.svg">
+                </a>
+                <form class="popup-reg__form">
+                    <h2 class="popup-reg__title">Регистрация</h2>
+                    <input type="tel" class="popup-reg__input" placeholder="Телефон">
+                    <input type="email" class="popup-reg__input" placeholder="Электронная почта">
+                    <input type="password" class="popup-reg__input" placeholder="Пароль">
+                    <input type="password" class="popup-reg__input" placeholder="Повторите пароль">
+                    <button type="submit" class="popup-reg__btn">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
+    <script src="sourse/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
