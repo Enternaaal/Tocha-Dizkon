@@ -25,7 +25,7 @@
                     <a href="#" class="header__caption">tocha</a>
                 </div>
                 <div class="header__links">
-                    <a href="#" class="header__link">
+                    <a href="#" class="header__link" id="open-popup-in">
                         Вход
                     </a>
                     <a href="#" class="header__link" id="open-popup">
@@ -36,8 +36,8 @@
         </div>
     </header>
 
-    <main class="main">
-        <section class="intro">
+    <main class="main" id="main">
+        <section class="intro" id="intro">
             <div class="container">
                 <div class="intro__inner">
                     <div class="intro__column" data-aos="fade-right">
@@ -344,7 +344,8 @@
     </footer>
 
     <div class="popup-reg" id="popup-reg">
-        <div class="popup-reg__body" id="popup-reg__body">
+        <a href="#header" id="close-area" class="popup-reg__area"></a>
+        <div class="popup-reg__body">
             <div class="popup-reg__content">
                 <a href="#header" class="popup-reg__close" id="close-popup">
                     <img src="images/popup-close.svg" alt="close.svg">
@@ -361,11 +362,30 @@
         </div>
     </div>
 
+    <div class="popup-in" id="popup-in">
+        <a href="#header" id="close-area-in" class="popup-in__area"></a>
+        <div class="popup-in__body">
+            <div class="popup-in__content">
+                <a href="#" class="popup-in__close" id="close-popup-in">
+                    <img src="images/popup-close.svg" alt="close.svg">
+                </a>
+                <form class="popup-in__form">
+                    <h2 class="popup-in__title">Вход</h2>
+                    <input type="tel" class="popup-in__input" placeholder="Телефон">
+                    <input type="password" class="popup-in__input" placeholder="Пароль">
+                    <a href="#" class="popup-in__link">Напомнить пароль</a>
+                    <button class="popup-in__btn" type="submit">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="sourse/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
