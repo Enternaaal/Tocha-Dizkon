@@ -64,3 +64,22 @@ document.querySelector("#close-area-in").onclick = (e) => {
   document.body.style.overflowY = "scroll";
   document.querySelector("#modal").style.display = "none";
 };
+
+// popup-mobile
+const openPopUpMobile = document.getElementById("open-popup-mobile");
+const closePopUpMobile = document.getElementById("close-popup-mobile");
+const closePopUpAreaMobile = document.getElementById("close-area-mobile");
+const popUpMobile = document.getElementById("popup-mobile");
+
+openPopUpMobile.addEventListener("click", function (e) {
+  e.preventDefault();
+  popUpMobile.classList.add("active");
+});
+
+closePopUpMobile.addEventListener("click", () => {
+  popUpMobile.classList.remove("active");
+});
+
+closePopUpAreaMobile.addEventListener("click", () => {
+  popUpMobile.classList.remove("active");
+});

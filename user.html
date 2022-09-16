@@ -15,26 +15,21 @@
 </head>
 
 <body>
-    <header id="header" class="header">
+    <header id="header" class="header header__user">
         <div class="container">
             <div class="header__inner">
                 <div class="header__box">
-                    <a href="#" class="header__logo">
+                    <a href="index.html" class="header__logo">
                         <img src="images/logo.svg" alt="" class="logo">
                     </a>
-                    <a href="#" class="header__caption">tocha</a>
+                    <a href="index.html" class="header__caption">tocha</a>
                 </div>
-                <a href="#" class="header__burger" id="open-popup-mobile">
-                    <span></span>
-                </a>
-                <nav class="header__menu">
-                    <a href="#" class="header__link" id="open-popup-in">
-                        Вход
-                    </a>
-                    <a href="#" class="header__link" id="open-popup">
-                        Регистрация
-                    </a>
-                </nav>
+                <div class="header__links">
+                    <a href="#intro" class="header__link-user">Подключение</a>
+                    <a href="#price" class="header__link-user">Оплата</a>
+                    <a href="#footer" class="header__link-user">Контакты</a>
+                    <a href="index.html" class="header__link-user">Выход</a>
+                </div>
             </div>
         </div>
     </header>
@@ -48,7 +43,7 @@
                         <p class="intro__subtitle">на вашем сайте</p>
                         <p class="intro__descr">Общение с клиентами станет простым<br>
                             и удобным, а подключение займет 5 минут.
-                            Первый месяц — <a href="#price" class="intro__descr-link">бесплатно!</a>
+                            Первый месяц — <a href="#" class="intro__descr-link">бесплатно!</a>
                         </p>
                         <a href="#price" class="intro__link">Подключить</a>
                     </div>
@@ -310,7 +305,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__logo">
@@ -359,7 +354,7 @@
                     <input type="email" class="popup-reg__input" placeholder="Электронная почта">
                     <input type="password" class="popup-reg__input" placeholder="Пароль">
                     <input type="password" class="popup-reg__input" placeholder="Повторите пароль">
-                    <a href="user.html" class="popup-reg__btn">Войти</a>
+                    <button type="submit" class="popup-reg__btn">Войти</button>
                 </form>
             </div>
         </div>
@@ -377,23 +372,8 @@
                     <input type="tel" class="popup-in__input" placeholder="Телефон">
                     <input type="password" class="popup-in__input" placeholder="Пароль">
                     <a href="#" class="popup-in__link">Напомнить пароль</a>
-                    <a href="user.html" class="popup-in__btn" type="submit">Войти</a>
+                    <button class="popup-in__btn" type="submit">Войти</button>
                 </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup-mobile" id="popup-mobile">
-        <a href="#header" id="close-area-mobile" class="popup-mobile__area"></a>
-        <div class="popup-mobile__body">
-            <div class="popup-mobile__content">
-                <a href="#" class="popup-mobile__close" id="close-popup-mobile">
-                    <img src="images/popup-close.svg" alt="close">
-                </a>
-                <div class="popup-mobile__links">
-                    <a href="#" class="popup-mobile__link">Вход</a>
-                    <a href="#" class="popup-mobile__link">Регистрация</a>
-                </div>
             </div>
         </div>
     </div>
