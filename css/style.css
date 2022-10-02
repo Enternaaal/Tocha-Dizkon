@@ -338,7 +338,7 @@ body {
 /* 2.2 intro */
 
 .intro {
-  padding-top: 93px;
+  padding-top: 173px;
   padding-bottom: 59px;
   background: rgba(242, 247, 255, 0.5);
   -webkit-backdrop-filter: blur(100px);
@@ -548,7 +548,11 @@ body {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
   border-radius: 6px;
   max-width: 350px;
-  min-height: 387px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .card__name {
@@ -582,8 +586,6 @@ body {
 }
 
 .card__link {
-  margin-left: 30px;
-  margin-right: 30px;
   padding: 12px 66px 12px 66px;
   font-weight: 700;
   font-size: 18px;
@@ -597,6 +599,7 @@ body {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  margin-bottom: 40px;
 }
 
 .card__link:hover {
@@ -892,8 +895,8 @@ body {
 .slider .slick-dots button {
   font-size: 0;
   opacity: 0.5;
-  width: 10px;
-  height: 11px;
+  width: 5px;
+  height: 15px;
   border: 2px solid #685ed6;
   border-radius: 100%;
   -webkit-transition: all 0.3s;
